@@ -1,125 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>404 - Lost in Space</title>
+  <title>404 - Page Not Found</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
-      color: white;
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      overflow: hidden;
-    }
-    .stars {
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-    }
-    .star {
-      position: absolute;
-      width: 2px;
-      height: 2px;
-      background: white;
-      border-radius: 50%;
-      animation: twinkle 3s infinite;
-    }
-    @keyframes twinkle {
-      0%, 100% { opacity: 0; }
-      50% { opacity: 1; }
-    }
-    .container {
+      font-family: Arial, sans-serif;
       text-align: center;
-      z-index: 10;
-      animation: float 3s ease-in-out infinite;
+      padding: 50px;
     }
-    @keyframes float {
-      0%, 100% { transform: translateY(0px); }
-      50% { transform: translateY(-20px); }
-    }
-    h1 {
-      font-size: 120px;
-      margin-bottom: 20px;
-      text-shadow: 0 0 20px rgba(255, 255, 255, 0.5);
-    }
-    .astronaut {
-      font-size: 80px;
-      margin: 20px 0;
-      animation: spin 5s linear infinite;
-    }
-    @keyframes spin {
-      from { transform: rotate(0deg); }
-      to { transform: rotate(360deg); }
-    }
-    h2 {
-      font-size: 32px;
-      margin-bottom: 15px;
-    }
-    p {
-      font-size: 18px;
-      margin: 10px 0;
-      opacity: 0.9;
-    }
-    .home-btn {
-      display: inline-block;
-      margin-top: 30px;
-      padding: 15px 40px;
-      background: rgba(255, 255, 255, 0.2);
-      border: 2px solid white;
-      color: white;
-      text-decoration: none;
-      border-radius: 50px;
-      font-size: 18px;
-      transition: all 0.3s;
-      backdrop-filter: blur(10px);
-    }
-    .home-btn:hover {
-      background: white;
-      color: #1e3c72;
-      transform: scale(1.05);
-    }
-    .contact {
-      margin-top: 20px;
-      font-size: 14px;
-      opacity: 0.7;
-    }
+    h1 { font-size: 100px; color: #e74c3c; }
   </style>
 </head>
 <body>
-  <div class="stars" id="stars"></div>
-  
-  <div class="container">
-    <h1>404</h1>
-    <div class="astronaut">🚀</div>
-    <h2>Houston, We Have a Problem!</h2>
-    <p>The page you're looking for has drifted off into space.</p>
-    <p>It seems to have left our solar system... or maybe it never existed! 🌌</p>
-    <a href="/" class="home-btn">🏠 Return to Earth (Home)</a>
-    <p class="contact">Need help? Contact: 24f1002478@ds.study.iitm.ac.in</p>
-  </div>
-
-  <script>
-    // Create stars
-    const starsContainer = document.getElementById('stars');
-    for (let i = 0; i < 100; i++) {
-      const star = document.createElement('div');
-      star.className = 'star';
-      star.style.left = Math.random() * 100 + '%';
-      star.style.top = Math.random() * 100 + '%';
-      star.style.animationDelay = Math.random() * 3 + 's';
-      starsContainer.appendChild(star);
-    }
-  </script>
+  <h1>404</h1>
+  <h2>Oops! Page not found</h2>
+  <p>The page you're looking for doesn't exist.</p>
+  <p>Contact: <!--email_off-->24f1002478@ds.study.iitm.ac.in<!--/email_off--></p>
+  <a href="/">← Go back home</a>
 </body>
 </html>
